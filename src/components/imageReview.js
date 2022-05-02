@@ -66,6 +66,19 @@ image !== null ?
         console.log(error);
       });
   };
+  const deleteDisplayImage = (_id) => {
+    axios
+    .delete(
+      `https://us-west-2.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/curb-appeal-thycd/service/delete-display-image/incoming_webhook/delete-display-image?_id=${_id}`
+    )
+    .then(() => {
+      console.log("deleted");
+      window.location.reload();
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
   //let stringTime = new Date().toString();
   if (Curb) {
     return (
@@ -125,7 +138,7 @@ image !== null ?
                 
               </div>
               <button
-                onClick={(_id) => deleteImage(Curb._id)}
+                onClick={(_id) => deleteDisplayImage(Curb._id)}
                 className="btn btn-danger"
               >
                 Delete from front page
