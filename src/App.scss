@@ -22,7 +22,43 @@ body::-webkit-scrollbar {
   height: 90vh;
   overflow: hidden;
 }
+.see-text {
+  color: white;
+  text-shadow:
+  0.05em 0 black,
+  0 0.05em black,
+  -0.05em 0 black,
+  0 -0.05em black,
+  -0.05em -0.05em black,
+  -0.05em 0.05em black,
+  0.05em -0.05em black,
+  0.05em 0.05em black;
+}
+@media only screen and (max-width: 600px) {
+  .slide-container {
+}
+.slide-image {
+  height:96vh;
+}
+}
 
+.hero-text {
+  color: black;
+  position: absolute;
+  z-index: 99;
+  padding-bottom: 150px;
+  font-size: 3.5vh
+}
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    }
+  
 .hero-image-container {
   width: 100vw;
 }
@@ -178,11 +214,19 @@ ul {
   padding: 1rem;
 }
 /* contact us */
-
+.contactus {
+  background-color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+.contactus:hover {
+  text-decoration: none;
+}
 .wood-background {
   z-index: -1;
   height: 60vh;
-
+padding-top: -150px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/woodVariety.jpg");
   background-size: 100%;
@@ -197,13 +241,15 @@ ul {
   color: white;
   margin-top: 10rem;
 }
-/*.wood-border {
+.wood-border {
   border: 12px solid transparent;
   border-image: url("./images/woodTexture.jpg") 111 round;
   border-bottom: none;
 }
 /* reviews  */
-
+.white {
+  color: white !important;
+}
 .reviews {
   padding-top: 2rem;
 }
@@ -223,7 +269,6 @@ ul {
 .footer {
   background-image: url('./textures/palewood.jpg');
   background-size: auto;
-  color: black;
 
   .links {
     ul {
