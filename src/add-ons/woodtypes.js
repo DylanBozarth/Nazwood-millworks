@@ -3,7 +3,7 @@ import React from "react";
 export const WoodTypes = () => {
   return (
     <div>
-      <div className="row wood">
+      <div className="row ">
         <div className="wood-background">
           
         <div className="wood-types">

@@ -39,9 +39,9 @@ Airway Heights, WA 99001</p>
   </div>
   <div class="row mt-5">
     <div class="col copyright">
-      <p class=""><small class="text-white-50">© 2022. All Rights Reserved.</small></p>
       
-  <Link to="/login" className="employee-login">Employee login</Link>
+      
+  <Link to="/login" className="see-text">Employee login</Link>
     </div>
   </div>
 </div>

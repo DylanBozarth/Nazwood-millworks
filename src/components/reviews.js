@@ -70,10 +70,10 @@ export const Reviews = () => {
   if (Curb) {
     return (
       <div className="reviews">
-        <h3 className="work-text">Do you have a finished space using Nazwood Millworks? We'd love to see it!</h3>
-        <h5 className="work-text"><Link to="/allphotos" className="work-text">See all photos</Link></h5>
+        <h3 className="work-text see-text">Do you have a finished space using Nazwood Millworks? We'd love to see it!</h3>
+        <h5 className="work-text "><Link to="/allphotos" className="work-text see-text">See all photos</Link></h5>
         <div className="row" > 
-        <div className="col-sm-5 review-box"><p></p><img src={highlighted} alt="woodwork" className="img-fluid" /></div>
+        <div className="col-sm-5 review-box"><p></p><img src={highlighted} alt="woodwork" className="img-fluid display-image" /></div>
         <div className="col-sm-6">
           <div className="row">
           {Curb.slice(0, 6).map((Curb) => {
@@ -97,9 +97,9 @@ export const Reviews = () => {
 
         <div>
           {" "}
-          <h3 onClick={() => setActive(!active)} className="work-text pointer">
+          <h1 onClick={() => setActive(!active)} className="work-text pointer see-text wood-background-small" >
             Submit your own photo
-          </h3>
+          </h1>
           <div className={active === true ? `text-center` : `hidden`}>
             <input
               type="file"

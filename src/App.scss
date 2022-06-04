@@ -35,8 +35,14 @@ body::-webkit-scrollbar {
   0.05em 0.05em black;
 }
 @media only screen and (max-width: 600px) {
-  .slide-container {
-}
+  .review-image {
+    width: 270px;
+    height: 350px;
+    margin: 10px;
+  }
+  .review-box {
+    display: none;
+  }
 .slide-image {
   height:96vh;
 }
@@ -187,7 +193,7 @@ body::-webkit-scrollbar {
   padding: 2rem;
   text-align: center;
   color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: .4px;
   -webkit-text-stroke-color: black;
   text-decoration: none;
 }
@@ -215,10 +221,11 @@ ul {
 }
 /* contact us */
 .contactus {
-  background-color: whitesmoke;
+  
   cursor: pointer;
   text-decoration: none;
   color:white;
+  text-align: center;
 }
 .contactus:hover {
   text-decoration: none;
@@ -235,6 +242,25 @@ padding-top: -150px;
 
   background-size: cover;
 }
+.wood-background-small {
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/woodVariety.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+.wood {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/woodVariety.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
 .wood-types {
   text-align: center;
   font-size: 2rem;
@@ -243,8 +269,7 @@ padding-top: -150px;
 }
 .wood-border {
   border: 12px solid transparent;
-  border-image: url("./images/woodTexture.jpg") 111 round;
-  border-bottom: none;
+  
 }
 /* reviews  */
 .white {
@@ -255,19 +280,22 @@ padding-top: -150px;
 }
 .review-box {
   background-color: #4180cb;
-  margin: 2rem;
-  padding-bottom: 2rem;
+  margin: 1rem;
+  height: 100%;
+
+}
+.display-image {
+width:100vw;
 }
 .review-image {
-  width: 100%;
-  height: auto;
+  
   margin: 10px;
 }
 /* contact us */
 
 /* footer  */
 .footer {
-  background-image: url('./textures/palewood.jpg');
+  background-image: url('./images/darkwood.jpg');
   background-size: auto;
 
   .links {

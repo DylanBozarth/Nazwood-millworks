@@ -10,7 +10,7 @@ export const AboutUs = () => {
         <div className="col-sm-2"></div>
        
         <div className="col-sm-12">
-          <h4 className="work-text about-text">
+          <h4 className="work-text about-text see-text">
             {" "}
             Nazwood Millworks is a family-owned manufacturer of high quality
             custom mouldings and millwork in the Inland Northwest. We are mill
